@@ -9,11 +9,11 @@
 //#define HGLRC
 //#define SISKIN
 //#define MAMBA_F50PRO
-//#define WRAITH32
+#define WRAITH32
 //#define AIKON20X20
 //#define AIKONSINGLE
 //#define FLYCOLOR
-#define AM32REF
+//#define AM32REF
 //#define BLPWR
 //#define HVFLYCOLOR
 
