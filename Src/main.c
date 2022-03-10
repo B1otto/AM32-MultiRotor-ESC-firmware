@@ -219,21 +219,21 @@ char eeprom_layout_version = 2;
 char dir_reversed = 0;
 char comp_pwm = 1;
 char VARIABLE_PWM = 1;
-char bi_direction = 1;
-char stuck_rotor_protection = 0;	// Turn off for Crawlers
-char brake_on_stop = 1;
+char bi_direction = 0;
+char stuck_rotor_protection = 1;	// Turn off for Crawlers
+char brake_on_stop = 0;
 char stall_protection = 0;
 char use_sin_start = 0;
 char TLM_ON_INTERVAL = 0;
 uint8_t telemetry_interval_ms = 30;
 uint8_t TEMPERATURE_LIMIT = 255;  // degrees 255 to disable
-char advance_level = 15;			// 7.5 degree increments 0 , 7.5, 15, 22.5)
+char advance_level = 2;			// 7.5 degree increments 0 , 7.5, 15, 22.5)
 uint16_t motor_kv = 2000;
 char motor_poles = 14;
 uint16_t CURRENT_LIMIT = 202;
 uint8_t sine_mode_power = 5;
 char drag_brake_strength = 10;		// Drag Brake Power when brake on stop is enabled
-uint8_t driving_brake_strength = 8;
+uint8_t driving_brake_strength = 10;
 uint8_t dead_time_override = DEAD_TIME;
 char sine_mode_changeover_thottle_level = 5;	// Sine Startup Range
 uint16_t stall_protect_target_interval = TARGET_STALL_PROTECTION_INTERVAL;
@@ -247,8 +247,8 @@ uint16_t servo_neutral = 1500;
 uint8_t servo_dead_band = 100;
 
 //========================= Battery Cuttoff Settings ========================
-char LOW_VOLTAGE_CUTOFF = 1;		// Turn Low Voltage CUTOFF on or off
-uint16_t low_cell_volt_cutoff = 320;	// 3.3volts per cell
+char LOW_VOLTAGE_CUTOFF = 0;		// Turn Low Voltage CUTOFF on or off
+uint16_t low_cell_volt_cutoff = 330;	// 3.3volts per cell
 
 //=========================== END EEPROM Defaults ===========================
 
